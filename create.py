@@ -1,5 +1,3 @@
-import json
-
 data = {
     "name": "Princess Corpuz",
     "age": 32,
@@ -9,7 +7,3 @@ data = {
     "phone": "09853952244",
     "email": "princess.corpuz@gmail.com",
 }
-
-
-with open("data.json", "w") as f:
-    json.dump(data, f, indent=2)
