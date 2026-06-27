@@ -1,18 +1,23 @@
 import json
 
-new_person = {
-    "name": {"first": "Juan", "last": "Dela Cruz"},
-    "birth": {"place": "Manila", "date": "1990-05-15"},
-    "personal": {"age": 36, "gender": "male", "active": True, "verified": False},
-    "address": {
-        "street": "123 Main St",
+
+data = {
+    "name": {"title": "Mr", "first": "Juan", "last": "Dela Cruz"},
+    "dob": {"date": "1990-05-15T00:00:00Z", "age": 36},
+    "location": {
         "city": "Manila",
-        "province": "Metro Manila",
-        "zipCode": "1000",
+        "region": "Metro Manila",
         "country": "Philippines",
+        "zipcode": "1000",
     },
-    "contact": {"phone": "09123456789", "email": "juan.delacruz@gmail.com"},
+    "gender": "male",
+    "phone": "09123456789",
+    "email": "juan.delacruz@gmail.com",
+    "registered": {"date": "2025-01-15T10:30:00Z", "age": 1},
+    "active": True,
+    "verified": False,
 }
 
+
 with open("data.json", "w") as f:
-    json.dump(new_person, f, indent=2)
+    json.dump(data, f, indent=2)
