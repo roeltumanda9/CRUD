@@ -1,9 +1,27 @@
 {
-  "name": "Princess Corpuz",
-  "age": 32,
-  "city": "Olongapo",
-  "country": "Philippines",
-  "gender": "female",
-  "phone": "09853952244",
-  "email": "princess.corpuz@gmail.com"
+  "name": {
+    "first": "Juan",
+    "last": "Dela Cruz"
+  },
+  "birth": {
+    "place": "Manila",
+    "date": "1990-05-15"
+  },
+  "personal": {
+    "age": 36,
+    "gender": "male",
+    "active": true,
+    "verified": false
+  },
+  "address": {
+    "street": "123 Main St",
+    "city": "Manila",
+    "province": "Metro Manila",
+    "zipCode": "1000",
+    "country": "Philippines"
+  },
+  "contact": {
+    "phone": "09123456789",
+    "email": "juan.delacruz@gmail.com"
+  }
 }
