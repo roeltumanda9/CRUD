@@ -1,7 +1,7 @@
 import json
 
 
-data = {
+person1 = {
     "name": {"title": "Mr", "first": "Juan", "last": "Dela Cruz"},
     "dob": {"date": "1990-05-15T00:00:00Z", "age": 36},
     "location": {
@@ -18,6 +18,24 @@ data = {
     "verified": False,
 }
 
+person2 = {
+    "name": {"title": "Ms", "first": "Maria", "last": "Santos"},
+    "dob": {"date": "1995-08-22T00:00:00Z", "age": 30},
+    "location": {
+        "city": "Cebu City",
+        "region": "Central Visayas",
+        "country": "Philippines",
+        "zipcode": "6000",
+    },
+    "gender": "female",
+    "phone": "09876543210",
+    "email": "maria.santos@yahoo.com",
+    "registered": {"date": "2024-06-15T14:20:00Z", "age": 1},
+    "active": True,
+    "verified": True,
+}
 
-with open("data.json", "w") as f:
-    json.dump(data, f, indent=2)
+data = {"person": [person1, person2]}
+
+with open("data.json", "w") as file:
+    json.dump(data, file, indent=2)
